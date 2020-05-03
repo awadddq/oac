@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Enter password: <input type="password" id='pass' type='text'  />
+<a href="../pdf/noc/daily_report.pdf" onclick="javascript:return validatePass()"><button>Enter</button></a>
+
+
+
+<script>
+function validatePass(){
+    if(document.getElementById('pass').value == 'admin124'){
+        return true;
+    }else{
+        alert('Wrong password!! | خطأ الباسورد');
+        return false;
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

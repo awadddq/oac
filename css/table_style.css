@@ -1,0 +1,21 @@
+.date{
+    border: none;
+    font-size: medium;
+}
+
+.input_text{
+ border: none;
+ width: 100%;
+ height: 70%;
+ font-size: small;
+}
+
+.number{
+    width: 9mm;
+    height: 9mm;
+    border: none;
+    fill: none;
+    color:white;
+    background-color: red;
+    font-size: large;
+}

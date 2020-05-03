@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/table_style.css" rel="stylesheet">
+
+</head>
+<body>
+    <table style="height: 356px; width: 661px; border-color: #202124;" border="1">
+        <tbody>
+        <tr style="height: 34px;">
+        <td style="width: 651px; height: 34px; text-align: center; background-color: red; color: white;" colspan="5"><br /> <strong>New Incident</strong><br /><br /></td>
+        </tr>
+        <tr style="height: 19px;">
+        <td style="width: 85px; height: 19px; text-align: center;">&nbsp;<strong>Ticket Created Date/Time</strong></td>
+        <td style="width: 124px; height: 19px;">&nbsp; <input class="date" type="datetime-local" style="width:100%; height:70%;"></td>
+        <td style="width: 142px; height: 19px; text-align: center;">&nbsp;<strong>Assigned</strong></td>
+        <td style="width: 282px; height: 19px;" colspan="2">&nbsp;&nbsp;
+        <textarea class="input_text"></textarea>
+        </td>
+        </tr>
+        <tr style="height: 258px;">
+        <td style="width: 215px; height: 258px; text-align: center;" colspan="2"><strong>Description</strong></td>
+        <td style="width: 430px; height: 258px;" colspan="3">&nbsp;&nbsp;&nbsp; 
+        <textarea class="input_text"></textarea>
+        </td>
+        </tr>
+        <tr style="height: 48px;">
+        <td style="width: 215px; height: 80px; text-align: center;" colspan="2"><strong>Affected User</strong>&nbsp;</td>
+        <td style="width: 430px; height: 29px;" colspan="3">&nbsp;&nbsp;&nbsp;<textarea class="input_text"></textarea></td>
+        </tr>
+        </tbody>
+        </table>
+
+        <br>
+        <button onclick="window.print()">Print</button><br><br>
+        <button onclick="window.location.href = 'ticket.html';">Back</button>
+</body>
+</html>
