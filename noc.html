@@ -121,7 +121,7 @@ Date		 : 15/April/2020
 					<li class="filter" data-filter=".about">About</li>
 					<li class="filter" data-filter=".tools">Communication tools</li>
 					<li class="filter" data-filter=".tasks">Tasks</li>
-					<li class="filter" data-filter=".procedures">Procedures</li>
+					<li class="filter" type="button" data-toggle="modal" data-target="#procedures">Procedures</li>
 				</ul>
 			</div>
 			<div class="portfolio_item_area text-center">
@@ -169,20 +169,29 @@ Date		 : 15/April/2020
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 mix all procedures">
-						<div class="box">
-							<img src="images/noc/procedures.png" alt="" />
-							<div class="box-content">
-								<div class="content">
-									<ul class="social">
-										<li><a href="images/noc/procedures.png" data-lightbox="images"><i
-													class="fa fa-eye"></i></a></li>
-									</ul>
-									<h3 class="title">Click to view</h3>
-								</div>
-							</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Model -->
+		<div id="procedures" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Procedures</h4>
+					</div>
+					<div class="modal-body">
+
+						<embed src="pass/noc_procedures.html" frameborder="0" width="100%" height="400px">
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
