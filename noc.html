@@ -121,7 +121,7 @@ Date		 : 15/April/2020
 					<li class="filter" data-filter=".about">About</li>
 					<li class="filter" data-filter=".tools">Communication tools</li>
 					<li class="filter" data-filter=".tasks">Tasks</li>
-					<li class="filter" type="button" data-toggle="modal" data-target="#procedures">Procedure</li>
+					<li class="filter" type="button" data-toggle="modal" data-target="#procedures">Procedures</li>
 				</ul>
 			</div>
 			<div class="portfolio_item_area text-center">
@@ -132,7 +132,7 @@ Date		 : 15/April/2020
 							<div class="box-content">
 								<div class="content">
 									<ul class="social">
-										<li><a href="images/noc/n1.png" data-lightbox="images"><i
+										<li><a href="images/noc/n1.png" data-lightbox="n1"><i
 													class="fa fa-eye"></i></a></li>
 									</ul>
 									<h3 class="title">Click to view</h3>
@@ -146,7 +146,7 @@ Date		 : 15/April/2020
 							<div class="box-content">
 								<div class="content">
 									<ul class="social">
-										<li><a href="images/noc/n2.png" data-lightbox="images"><i
+										<li><a href="images/noc/n2.png" data-lightbox="n2"><i
 													class="fa fa-eye"></i></a></li>
 
 									</ul>
@@ -161,7 +161,7 @@ Date		 : 15/April/2020
 							<div class="box-content">
 								<div class="content">
 									<ul class="social">
-										<li><a href="images/noc/n3.png" data-lightbox="images"><i
+										<li><a href="images/noc/n3.png" data-lightbox="n3"><i
 													class="fa fa-eye"></i></a></li>
 									</ul>
 									<h3 class="title">Click to view</h3>
@@ -185,9 +185,10 @@ Date		 : 15/April/2020
 					</div>
 					<div class="modal-body">
 
-						<embed src="pass/noc_procedures.html" frameborder="0" width="100%" height="400px">
+						<embed src="select_pages/procedure_select.html" frameborder="0" width="100%" height="400px">
 
 						<div class="modal-footer">
+							<button onclick="goBack()" type="button" class="btn btn-default">Back</button>
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
@@ -264,17 +265,22 @@ Date		 : 15/April/2020
 		<!-- Trigger the modal with a button -->
 		<div class="portfolio_filter text-center wow fadeInDown">
 			<ul>
-				<li class="filter" type="button" data-toggle="modal" data-target="#myModal">Noc daily report</li>
+				<li class="filter" type="button" data-toggle="modal" data-target="#daily">Noc daily report</li>
 			</ul>
 		</div>
 		<div class="portfolio_filter text-center wow fadeInDown">
 			<ul>
-				<li class="filter" type="button" data-toggle="modal" data-target="#circuit">Noc circuit report</li>
+				<li class="filter" type="button" data-toggle="modal" data-target="#monthly">Noc monthly report</li>
+			</ul>
+		</div>
+		<div class="portfolio_filter text-center wow fadeInDown">
+			<ul>
+				<li class="filter" type="button" data-toggle="modal" data-target="#circuit">Download Noc circuit report</li>
 			</ul>
 		</div>
 
 		<!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
+		<div id="daily" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
 
 				<!-- Modal content-->
@@ -295,6 +301,30 @@ Date		 : 15/April/2020
 				</div>
 			</div>
 		</div>
+
+		<div id="monthly" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Noc monthly report</h4>
+					</div>
+					<div class="modal-body">
+
+						<embed src="select_pages/m_report_select.html" frameborder="0" width="100%" height="400px">
+
+						<div class="modal-footer">
+							<button onclick="goBack()" type="button" class="btn btn-default">Back</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 		<div id="circuit" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
 
@@ -305,8 +335,7 @@ Date		 : 15/April/2020
 						<h4 class="modal-title">Noc circuit report</h4>
 					</div>
 					<div class="modal-body">
-
-						<embed src="pass/noc_circuit_report.html" frameborder="0" width="100%" height="400px">
+						<embed src="pdf/noc/report_of_links.xlsx" frameborder="0" width="100%" height="400px">
 
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -356,6 +385,13 @@ Date		 : 15/April/2020
 		</div>
 	</div>
 	<!-- END FOOTER -->
+
+	<!-- back script -->
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+		</script>
 
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
